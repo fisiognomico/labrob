@@ -1,11 +1,6 @@
-# -----------
-# User Instructions:
+#----------
 #
-# Modify the the search function so that it becomes
-# an A* search algorithm as defined in the previous
-# lectures.
-#
-# Your function should return the expanded grid
+# The function returns the expanded grid
 # which shows, for each element, the count when
 # it was expanded or -1 if the element was never expanded.
 # 
@@ -36,9 +31,7 @@ delta = [[-1, 0 ], # go up
 delta_name = ['^', '<', 'v', '>']
 
 def search(grid,init,goal,cost,heuristic):
-    # ----------------------------------------
-    # modify the code below
-    # ----------------------------------------
+   
     closed = [[0 for col in range(len(grid[0]))] for row in range(len(grid))]
     closed[init[0]][init[1]] = 1
 
