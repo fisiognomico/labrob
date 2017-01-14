@@ -8,6 +8,8 @@
 #
 # The error should asymptotically stationize below 1.0e-10e 
 # (too many iterations will cause a timeout).
+#
+# The Cross Track Error is firstly stored by PID.py
 # ------------
  
 from math import *
@@ -164,7 +166,6 @@ def run(params, printflag = False):
 
 
 def twiddle(tol = 0.2): #Make this tolerance bigger if you are timing out!
-############## ADD CODE BELOW ####################
             
 
     N = 3
